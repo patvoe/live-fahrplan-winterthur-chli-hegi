@@ -343,7 +343,7 @@ function ConnectionCard({ connection, currentTime }: ConnectionCardProps) {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
             <div className="flex flex-col items-center justify-center bg-slate-50 rounded-xl p-3 min-w-[70px]">
-              <span className="text-2xl font-bold tabular-nums">{formatTime(connection.from.departure)}</span>
+              <span className="text-xl md:text-2xl font-bold tabular-nums">{formatTime(connection.from.departure)}</span>
               {connection.from.delay && connection.from.delay > 0 ? (
                 <span className="text-xs font-bold text-red-500">+{connection.from.delay}'</span>
               ) : (
